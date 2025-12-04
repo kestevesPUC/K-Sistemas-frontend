@@ -8,7 +8,17 @@ export default defineConfig(() => {
     base: './',
     build: {
       outDir: 'build',
-    },
+      sourcemap: false, // não gera arquivos .map
+      minify: 'terser', // usa o Terser para minificação
+      rollupOptions: {
+      output: {
+        sourcemap: false, // não embute inline
+        entryFileNames: 'assets/[hash].js',
+        chunkFileNames: 'assets/[hash].js',
+        assetFileNames: 'assets/[hash].[ext]',
+      }
+    }
+  },
     css: {
       postcss: {
         plugins: [
@@ -24,6 +34,7 @@ export default defineConfig(() => {
     optimizeDeps: {
       force: true,
       esbuildOptions: {
+        sourcemap: false,
         loader: {
           '.js': 'jsx',
         },
@@ -40,6 +51,7 @@ export default defineConfig(() => {
       extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.scss'],
     },
     server: {
+      allowedHosts: [""],
       port: 3000,
       proxy: {
         // https://vitejs.dev/config/server-options.html
