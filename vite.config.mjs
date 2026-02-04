@@ -7,9 +7,9 @@ export default defineConfig(() => {
   return {
     base: './',
     build: {
-      outDir: 'dist',
-      sourcemap: false, // não gera arquivos .map
-      minify: 'terser', // usa o Terser para minificação
+      outDir: 'build',
+      sourcemap: false,
+      minify: 'terser',
       rollupOptions: {
       output: {
         sourcemap: false, // não embute inline
