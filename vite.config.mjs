@@ -52,7 +52,7 @@ export default defineConfig(() => {
     },
     server: {
       allowedHosts: [
-        'ksistemasbackend.azurewebsites.net' 
+        'ksistemas.azurewebsites.net' 
       ],
       port: 3000,
       proxy: {
