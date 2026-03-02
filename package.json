@@ -13,11 +13,11 @@
   "license": "MIT",
   "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
   "scripts": {
-    "start": "vite",
     "build": "vite build",
+    "lint": "eslint",
     "clean-sourcemaps": "rimraf ./build/**/*.map",
     "serve": "vite preview",
-    "lint": "eslint"
+    "start": "vite",
   },
   "dependencies": {
     "@coreui/chartjs": "^4.1.0",
