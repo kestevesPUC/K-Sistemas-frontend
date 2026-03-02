@@ -17,7 +17,7 @@
     "lint": "eslint",
     "clean-sourcemaps": "rimraf ./build/**/*.map",
     "serve": "vite preview",
-    "start": "vite",
+    "start": "vite"
   },
   "dependencies": {
     "@coreui/chartjs": "^4.1.0",
