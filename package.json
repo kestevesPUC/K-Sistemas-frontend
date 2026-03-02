@@ -15,7 +15,6 @@
   "scripts": {
     "build": "vite build",
     "lint": "eslint",
-    "clean-sourcemaps": "rimraf ./build/**/*.map",
     "serve": "vite preview",
     "start": "vite"
   },
