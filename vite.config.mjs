@@ -52,7 +52,7 @@ export default defineConfig(() => {
     },
     server: {
       allowedHosts: [
-        'oficina-inteligente.azurewebsites.net' 
+        'oficina-inteligente-hkf8a0h0dtbcb6at.canadacentral-01.azurewebsites.net' 
       ],
       port: 3000,
       proxy: {
