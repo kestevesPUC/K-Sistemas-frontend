@@ -10,12 +10,13 @@ on:
 env:
   FORCE_COLOR: 2
   NODE: 22
+  node-version: 22.x
 
 jobs:
   build:
     strategy:
       matrix:
-        platform: [ubuntu-latest, windows-latest]
+        platform: [ubuntu-latest]
         node-version: [20.x, 22.x]
     runs-on: ${{ matrix.platform }}
     steps:
