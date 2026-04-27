@@ -16,7 +16,8 @@
     "build": "vite build",
     "lint": "eslint",
     "serve": "vite preview",
-    "start": "vite"
+    "dev": "vite",
+    "start": "serve -s build -l 8080"
   },
   "dependencies": {
     "@coreui/chartjs": "^4.1.0",
@@ -38,6 +39,7 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.9.5",
     "redux": "5.0.1",
+    "serve": "^14.2.6",
     "simplebar-react": "^3.3.2"
   },
   "devDependencies": {
