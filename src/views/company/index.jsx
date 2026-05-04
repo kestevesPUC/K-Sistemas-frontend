@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Card from '../../components/Card'
+import CardComponent from '../../components/CardComponent'
 import { Building2, Plus } from 'lucide-react';
 import { CButton, CCard, CCardBody, CCol, CFormText, CRow } from '@coreui/react';
 import ToolBar from '../../components/ToolBar';
-import { Modal } from '../../components/Modal';
+import { ModalComponent } from '../../components/modal/ModalComponent';
 import IconEmpresa from './partials/company-icon';
 import ModalBody from './partials/modal-body';
 import ModalButton from './partials/modal-button';
@@ -45,7 +45,7 @@ export default function Company() {
         ]}
       />
 
-      <Card
+      <CardComponent
         title="Empresas"
         content={
           <>
@@ -76,7 +76,7 @@ export default function Company() {
         }
       />
 
-      <Modal
+      <ModalComponent
         title={"Cadastrar Empresa"}
         icon={
           <CRow className='align-items-center'>

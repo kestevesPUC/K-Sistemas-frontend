@@ -1,7 +1,7 @@
 import { CCard, CCardBody, CCol, CFormText, CRow } from '@coreui/react'
 import React from 'react'
 
-export default function Card({ title, content }) {
+export default function CardComponent({ title, content }) {
     return (
         <CCard className='mb-3 card-blue-edge card-square'>
             <CCardBody>

@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import ToolBar from '../../components/ToolBar'
 import { CButton, CCard, CCardBody, CCol, CFormText, CRow } from '@coreui/react'
 import { Plus, Users } from 'lucide-react'
-import Card from '../../components/Card'
-import { Modal } from '../../components/Modal'
+import CardComponent from '../../components/CardComponent'
+import { ModalComponent } from '../../components/modal/ModalComponent'
 import PhotoCollaborator from './partials/photo-collaborator'
 import ModalBody from './partials/modal-body'
 import ModalButton from './partials/modal-button'
@@ -34,7 +34,7 @@ export default function Collaborator() {
                 ]}
             />
 
-            <Card
+            <CardComponent
                 title="Funcionários"
                 content={
                     <>
@@ -67,7 +67,7 @@ export default function Collaborator() {
                 }
             />
 
-            <Modal
+            <ModalComponent
                 title={"Cadastrar Funcionário"}
                 icon={
                     <CRow className='align-items-center'>
