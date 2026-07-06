@@ -19,7 +19,7 @@ import {
   cilUserPlus,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
-import { Building2, Users, Users2 } from 'lucide-react'
+import { Car, Users } from 'lucide-react'
 
 const _nav = [
   {
@@ -47,6 +47,22 @@ const _nav = [
     name: 'Funcionario',
     to: '/collaborator',
     icon: <CIcon icon={cilGroup} customClassName="nav-icon border-1" />,
+  },
+  {
+    component: CNavTitle,
+    name: 'Locacao',
+  },
+  {
+    component: CNavItem,
+    name: 'Clientes',
+    to: '/clientes',
+    icon: <Users className="nav-icon" size={20} />,
+  },
+  {
+    component: CNavItem,
+    name: 'Veiculos',
+    to: '/veiculos',
+    icon: <Car className="nav-icon" size={20} />,
   },
   {
     component: CNavItem,
